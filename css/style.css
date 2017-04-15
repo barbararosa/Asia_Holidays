@@ -1,0 +1,39 @@
+body {
+  background-image: url(../img/background.png);
+ }
+.content {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/white_main.png);
+  background-repeat: repeat-y;
+  margin: 0px 150px 0px 150px;
+  width: 1200px ;
+  height: auto;
+
+
+}
+
+.header {
+  height: 213px;
+  width: 1200px;
+ display: flex;
+}
+
+.logo {
+  display: inherit;
+  flex-flow: row wrap;
+  align-content:  space-between;
+  margin: 50px 10px 0px 20px;
+}
+
+.text1 {
+  margin: 90px 0px 0px -220px;
+  color: #329ab3;
+}
+.contacts {
+ color: #329ab3;
+ display: inherit;
+ flex-flow: column wrap;
+ margin-left: 530px;
+
+}
