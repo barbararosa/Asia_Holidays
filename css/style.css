@@ -1,23 +1,27 @@
 body {
   background-image: url(../img/background.png);
  }
-.content {
-  display: flex;
-  justify-content: center;
-  background-image: url(../img/white_main.png);
-  background-repeat: repeat-y;
-  margin: 0px 150px 0px 150px;
-  width: 1200px ;
-  height: auto;
+ *{
+   margin: 0;
+   padding: 0;
+ }
 
-
+.wrapper {
+  background-color: #fff;
+  width: 1000px;
+  height: 1126px;
+  margin: 0 auto;
+  box-shadow: -3px 10px 5px 0px rgba(0,0,0,0.75);
+  margin-bottom: 100px;
 }
+
+
 
 .header {
   height: 213px;
-  width: 1200px;
- display: flex;
+  display: flex;
 }
+
 
 .logo {
   display: inherit;
@@ -26,14 +30,223 @@ body {
   margin: 50px 10px 0px 20px;
 }
 
-.text1 {
+.logo1 {
   margin: 90px 0px 0px -220px;
   color: #329ab3;
 }
-.contacts {
- color: #329ab3;
- display: inherit;
- flex-flow: column wrap;
- margin-left: 530px;
 
+
+.contacts {
+ font-family: tahoma;
+ font-size: 16px;
+ line-height: 1.2;
+ color: #329ab3;
+ display: flex;
+ flex-flow: column;
+ margin-left: 500px;
+ margin-top: 15px;
+}
+
+.contacts a {
+  color: #329ab3;
+}
+
+
+.countries {
+  white-space: nowrap;
+  display: flex;
+  flex-flow: row  column-reverse;
+  align-content: flex-end;
+  margin-left: -330px;
+  margin-top: 90px;
+
+}
+
+.countries a {
+  color: #329ab3;
+  font-family: tahoma;
+  font-size: 12px;
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+
+}
+
+.countries .india {
+ background-image: url(../img/i_flag.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ padding-top: 100px;
+}
+
+.countries .nepal {
+ background-image: url(../img/n_flag.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ padding-top: 100px;
+}
+
+.countries .tibet {
+  background-image: url(../img/t_flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+.countries .butan {
+  background-image: url(../img/b_flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+.countries .sri-lanka {
+  background-image: url(../img/s_flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+.countries .maldives {
+  background-image: url(../img/m_flag.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+
+}
+
+
+
+
+
+
+.menu>ul {
+    display: block;
+    margin-top: -3px;
+    width: 1000px;
+    list-style:i none;
+    background-color: #333333;
+
+
+}
+
+.menu ul:after {
+    display: block;
+    position: absolute;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+.menu  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 138px;
+    text-align: center;
+}
+
+
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #333333;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: black;
+}
+
+.submenu{
+  display: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.submenu li {
+    display: none;
+    position: relative;
+    top: 3px;
+    float: none;
+    width: 141px;
+    left: -9px;
+    background-color: white;
+    border: 1px solid silver;
+}
+
+.submenu a {
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: #333333;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+
+
+.content {
+  clear: both;
+  width: 997px;
+  border: black 1px;
+
+}
+
+.info {
+  float: left;
+  padding: 10px;
+  position: relative;
+  width: 200px;
+  height: 620px;
+  overflow: auto;
+  background-color: #edeef0;
+  font-family: tahoma;
+  line-height: normal;
+}
+
+.info h1 {
+  text-align: center;
+  font-family: tahoma;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.news {
+  float: right;
+  position: relative;
+  margin-right: -3px;
+  padding: 10px;
+  position: relative;
+  width: 200px;
+  height: 620px;
+  overflow: auto;
+  background-color: #edeef0;
+  font-family: tahoma;
+  line-height: normal;
+
+}
+
+.news h1 {
+  text-align: center;
+  font-family: tahoma;
+  font-size: 20px;
+  line-height: 2;
+}
+
+
+
+.footer {
+  padding-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #fff;
+  clear: both;
+  position: relative;
 }
